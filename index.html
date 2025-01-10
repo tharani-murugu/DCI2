@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1><b>ADD STUDENT</b></h1>
+    <form method="post" name="sample" onsubmit="adddata(event)">
+        <div class="data">
+            <h3>Student Details</h3>
+            <hr style="margin-top: 2%; color: rgb(190, 22, 22); border: 0.5px solid rgb(235, 233, 233);">
+        <div>
+        <div class="form-container">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="first-name">First Name</label>
+                  <input type="text" id="first-name" name="firstname" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="last-name">Last Name</label>
+                  <input type="text" name="lastname" id="last-name" placeholder="Last Name" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                        <label for="dob">Date & District</label>
+                        <div class="dd">
+                        <div class="da">
+                            <input type="text" name="date" id="dateofbirth" placeholder="Date of Birth">
+                        </div>
+                        <div class="da">
+                        <input type="text" name="district" id="district" placeholder="District">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="parent-name">Parent Name</label>
+                    <input type="text" name="parentname" id="parent-name" placeholder="Parent Name">
+                  </div>
+              </div>
+              <div class="form-row">   
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phonenumber" id="phone" placeholder="Phone Number">
+                  </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group1">
+                  <label for="grade">Grade</label>
+                  <input  type="text" name="grade" id="grade" placeholder="Grade">
+                </div>
+              </div>
+              <button type="submit" class="submit-btn">SAVE</button>
+              <button><a href="savedata.html"><button type="button" class="view-btn">VIEW DATA</button></a></button>
+      </div>
+      
+      </form>         
+</body>
+</html>
